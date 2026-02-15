@@ -11,18 +11,11 @@ function App() {
   };
 
   const handleDetect = () => {
-  if (!fileName) {
-    setResult("⚠️ Please upload a leaf image first!");
-    return;
-  }
-
-  setResult("🌱 Analyzing image using AI model...");
-
-  setTimeout(() => {
-    setResult("✅ Healthy Leaf (Confidence: 94%)");
-  }, 2000);
-};
-
+    setResult("🌱 Analyzing image using AI model...");
+    setTimeout(() => {
+      setResult("✅ Healthy Leaf (Confidence: 94%)");
+    }, 2000);
+  };
 
   return (
     <div
